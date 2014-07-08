@@ -8,4 +8,4 @@ up in an alert or fill an input box that you've clicked on. For more wordy infor
 chances to customize your own bookmarks, please visit the GitHub [page](http://whaatt.github.io/Authlet/)
 for this project.
 
-![Authlet](http://imgur.com/Idvht0M)
+![Authlet](http://imgur.com/Idvht0M.gif)
