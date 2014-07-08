@@ -6,4 +6,4 @@ requiring two-step authentication. You'd normally use an app like Google Authent
 codes; Authlet, however, allows you to use a bookmarklet from your browser itself and have the passcode pop
 up in an alert or fill an input box that you've clicked on. For more wordy information about Authlet and 
 chances to customize your own bookmarks, please visit the GitHub [page](http://whaatt.github.io/Authlet/)
-for this project. Check out Authlet in action [here](http://imgur.com/Idvht0M.gifs)!
+for this project. Check out Authlet live over [here](http://imgur.com/Idvht0M.gifs)!
