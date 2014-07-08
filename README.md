@@ -7,3 +7,5 @@ codes; Authlet, however, allows you to use a bookmarklet from your browser itsel
 up in an alert or fill an input box that you've clicked on. For more wordy information about Authlet and 
 chances to customize your own bookmarks, please visit the GitHub [page](http://whaatt.github.io/Authlet/)
 for this project.
+
+![Authlet](http://imgur.com/Idvht0M)
