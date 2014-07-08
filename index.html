@@ -41,28 +41,34 @@
       </header>
       <section>
         <h3>
-<a name="about-authlet" class="anchor" href="#about-authlet"><span class="octicon octicon-link"></span></a>About Authlet</h3>
+<a name="about-authlet" class="anchor" href="#about-authlet"><span class="octicon octicon-link"></span></a>About Authlet or <a href="#customize">TL;DR</a></h3>
 
-<p>Authlet is a browser bookmarklet designed to provide you the authentication code for websites requiring two-step authentication. You'd normally use a mobile app like Google Authenticator to generate the code; Authlet allows you to use a bookmarklet <em>from your browser itself</em> and have the passcode pop up in an alert or be auto-filled into an input box that you've clicked on. <strong><a href="#customize">Skip a few sections</a> below to customize your own version of Authlet</strong> based on the unique authentication key provided by your institution; read the next two sections for some interesting discussion!</p>
+<p>Authlet is a browser bookmarklet designed to provide you the authentication code for a specific website requiring two-step authentication. You'd normally use an app like Google Authenticator to generate these codes; Authlet allows you to use a bookmarklet <em>from your browser itself</em> and have the passcode pop up in an alert or fill an input box that you've clicked on.</p>
 
 <h3>
 <a name="motivation" class="anchor" href="#motivation"><span class="octicon octicon-link"></span></a>Motivation</h3>
 
-<p>As a recent admit to one <a href="http://stanford.edu">certain</a> university, I was quickly faced with the <del>daunting</del> annoying prospect of using the beast that is two-step authentication. To be clear, I don't think it's an entirely unnecessary precaution in the threat-filled internets of today: it's <em>merely</em> an annoyance. But for power users in the computing world, securing your password with the requisite entropy and street smarts is hardly a concern, while the institutions concerned enough to use two-step authentication probably take good care of your identity on their servers. Authlet is for anyone who doesn't want to pull out their phone and pull up an authenticator app to check email.</p>
+<p>As a recent admit to one <a href="http://stanford.edu">certain</a> university, I was quickly faced with the <del>daunting</del> annoying prospect of using the beast that is two-step authentication. To be clear, I don't think it's an entirely unnecessary precaution in the threat-filled internets of today: it's very merely an <em>annoyance</em>. Authlet is for anyone who doesn't want to pull out their phone and pull up an app just to authenticate for web mail.</p>
 
 <h3>
-<a name="small-risks" class="anchor" href="#small-risks"><span class="octicon octicon-link"></span></a>Small Risks</h3>
+<a name="small-risks" class="anchor" href="#small-risks"><span class="octicon octicon-link"></span></a>Security</h3>
 
-<p>By its very nature, Authlet attenuates the purpose of two-step authentication by making it easier to gain access to the second step in <em>two-step</em>. Please use Authlet with care and always heed the warnings of your institution's security geeks; I'm not responsible for any trouble related to your use of this bookmark. That being said, I think there's comparatively little to worry about for anyone who exercises good judgment with their credentials.</p>
+<p>By its very nature, Authlet attenuates the purpose of two-step authentication by making it easier to gain access to the second step in <em>two-step</em> but only assuming that someone has gained physical access to your computer. Please use Authlet with care and always heed the warnings of your institution's security geeks; I'm not responsible for any trouble related to your use of this bookmark. That being said, I think there's comparatively little to worry about for anyone who exercises good judgment with their credentials. As Wikipedia notes:</p>
+
+<blockquote>
+<p>In the case of a lost ATM card, the user's accounts are still safe; anyone who finds the card cannot withdraw money as they do not know the PIN. The same is true if the attacker has only knowledge of the PIN and does not have the card. This is what makes two-factor verification more secure: there are two factors required in order to authenticate.</p>
+</blockquote>
+
+<p>As such, you're screwed, if you'll pardon my language, whether someone steals your authenticating laptop or smartphone, but you're not as screwed if they don't also have your password: a good reason not to save your credentials anywhere that isn't encrypted. In fact you might argue that it's marginally easier to pilfer your mobile devices. Maybe I'm wrong, but one of the only negative instances I can imagine would be if someone installed malicious tracking software on a computer using Authlet. You'd be screwed anyway if that were the case.</p>
 
 <h3>
 <a name="customize" class="anchor" href="#customize"><span class="octicon octicon-link"></span></a>Customize</h3>
 
-<p>You will need your authentication key to create an Authlet for a particular website. This usually comes in the form of a text-based string of letters and numbers that you are instructed to enter into an app like Google Authenticator; many sites like Dropbox refer to this sequence as your <em>secret key</em>. If you are instead presented with only a QR code and no option to get a text-based key, simply download the QR code image and use any one of many free QR decoding services available online. <strong>I strongly suggest that you first install authentication with your phone alongside Authlet.</strong> Please enter your key in the input box below and hit submit.</p>
+<p>You will need your authentication key to create an Authlet for a particular website. This usually comes in the form of a text-based string of letters and numbers that you are instructed to enter into an app like Google Authenticator; many sites like Dropbox refer to this sequence as your <em>secret key</em>. If you are instead presented with only a QR code and no option to get a text-based key, simply download the QR code image and use any one of many free QR decoding services available online. <strong>I strongly suggest</strong> that you first install authentication with your phone alongside Authlet. Please enter your key in the input box below and hit submit.</p>
 
 <span style="margin-bottom: 20px; display: table; margin-left: auto; margin-right: auto;"><input type="text" id="authKey" placeholder="Enter key here."><input type="submit" id="submitButton" value="Submit"> → <a id="bookmark">Authlet</a></span>
 
-<p>The link generated by the input box is your personal Authlet! Drag it to your toolbar or right-click it and bookmark it for future use. <i>Remember to test your Authlet by clicking on the link here first!</i> The next time you navigate to the given login site, simply click on the passcode input box and then your Authlet. If you don't click on the input box, that's also okay; your passcode will pop up as an alert in your browser.</p>
+<p>The link generated by the input box is your personal Authlet! Drag it to your toolbar or right-click it and bookmark it for future use. <em>Remember to test your Authlet by clicking on the link here first!</em> The next time you navigate to the given login site, simply click on the passcode input box and then your Authlet. If you don't click on the input box, that's also okay; your passcode will pop up as an alert in your browser.</p>
 
 <h3>
 <a name="contribute" class="anchor" href="#contribute"><span class="octicon octicon-link"></span></a>Contribute</h3>
