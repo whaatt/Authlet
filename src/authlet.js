@@ -73,7 +73,7 @@ function Authlet() {
 
     /* Generate one time password based on Google's protocol. */
 
-    function updateOTP(timeCur, secret) {   
+    function updateOTP(timeCur, secret) {
         var key = base32tohex(secret);
         var epoch = Math.round(timeCur.getTime() / 1000.0);
         var time = leftpad(dec2hex(Math.floor(epoch / 30)), 16, '0');
@@ -95,10 +95,14 @@ function Authlet() {
     /* Get the accurate time from the server response. */
 
     function getGlobTime(json) {
+        //this will end up synchronous
         var xhr = new XMLHttpRequest();
-        xhr.open('HEAD', document.URL, false);
-        xhr.send(); // request the server time
         
+        // add unique timestamp to URL parameters to bypass cache and acquire the unique global time
+        var url = window.location.protocol + '//' + window.location.host + window.location.pathname
+        xhr.open('HEAD', url + ((/\?/).test(url) ? '&' : '?') + (new Date()).getTime(), false);
+        
+        xhr.send(); // request the server or global time
         spinner.stop(); // stop spin and remove DOM element
         return new Date(xhr.getResponseHeader('Date'));
     };
