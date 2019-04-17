@@ -1,9 +1,6 @@
 Authlet
 =======
 
-Authlet is a browser bookmarklet designed to provide you the authentication code for a specific website
-requiring two-step authentication. You'd normally use an app like Google Authenticator to generate these
-codes; Authlet, however, allows you to use a bookmarklet from your browser itself and have the passcode pop
-up in an alert or fill an input box that you've clicked on. For more wordy information about Authlet and 
-chances to customize your own bookmarks, please visit the GitHub [page](http://whaatt.github.io/Authlet/)
-for this project. Check out Authlet live over [here](http://imgur.com/Idvht0M.gifs)!
+Authlet is a browser bookmarklet for populating 2FA codes without a 2FA device. Check out the
+project [page](http://whaatt.github.io/Authlet/) for more details or view a live action demo
+[here](http://imgur.com/Idvht0M.gifs).
